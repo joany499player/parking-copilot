@@ -1,0 +1,32 @@
+export const parkingSpots = [
+  {
+    id: '1',
+    name: 'Rue Peel',
+    distance: '2 min away',
+    price: '$1.50 / hour',
+    status: 'Allowed',
+    until: '5:30 PM',
+    vignette: 'No vignette required',
+    warning: 'Restriction starts in 45 minutes',
+  },
+  {
+    id: '2',
+        name: 'Rue Bishop',
+    distance: '4 min away',
+    price: '$2.00 / hour',
+    status: 'Warning',
+    until: '6:00 PM',
+    vignette: 'Zone 9 vignette',
+    warning: 'Restriction starts in 20 minutes',
+  },
+  {
+    id: '3',
+    name: 'Rue Mackay',
+    distance: '3 min away',
+    price: 'Free after 6 PM',
+    status: 'Allowed',
+    until: '6:00 PM',
+        vignette: 'No vignette required',
+    warning: 'Paid period ends soon',
+  },
+];
