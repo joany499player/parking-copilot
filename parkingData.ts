@@ -1,3 +1,5 @@
+export const selectedSpotId = '2';
+
 export const parkingSpots = [
   {
     id: '1',
@@ -8,16 +10,22 @@ export const parkingSpots = [
     until: '5:30 PM',
     vignette: 'No vignette required',
     warning: 'Restriction starts in 45 minutes',
+        canPark: true,
+    maxDuration: '2 hours',
+    nextRestrictionType: 'Street cleaning',
   },
   {
     id: '2',
-        name: 'Rue Bishop',
+    name: 'Rue Bishop',
     distance: '4 min away',
     price: '$2.00 / hour',
     status: 'Warning',
     until: '6:00 PM',
     vignette: 'Zone 9 vignette',
     warning: 'Restriction starts in 20 minutes',
+    canPark: true,
+    maxDuration: '1 hour',
+        nextRestrictionType: 'Permit only',
   },
   {
     id: '3',
@@ -26,7 +34,10 @@ export const parkingSpots = [
     price: 'Free after 6 PM',
     status: 'Allowed',
     until: '6:00 PM',
-        vignette: 'No vignette required',
+    vignette: 'No vignette required',
     warning: 'Paid period ends soon',
+    canPark: true,
+    maxDuration: '3 hours',
+    nextRestrictionType: 'Paid period ends',
   },
-];
+  ];
