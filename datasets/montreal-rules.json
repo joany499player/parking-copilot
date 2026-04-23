@@ -1,0 +1,23 @@
+[
+  {
+    "spotId": "1",
+    "canPark": true,
+    "until": "17:30",
+    "maxDurationMinutes": 120,
+    "nextRestrictionType": "street_cleaning"
+  },
+  {
+    "spotId": "2",
+    "canPark": true,
+    "until": "18:00",
+    "maxDurationMinutes": 60,
+        "nextRestrictionType": "permit_only"
+  },
+  {
+    "spotId": "3",
+    "canPark": true,
+    "until": "18:00",
+    "maxDurationMinutes": 180,
+    "nextRestrictionType": "paid_period_ends"
+  }
+]

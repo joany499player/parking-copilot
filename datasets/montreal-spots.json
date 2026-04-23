@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1",
+    "name": "Rue Peel",
+    "lat": 45.4955,
+    "lng": -73.5742,
+    "zone": "A",
+    "price": 1.5
+  },
+  {
+    "id": "2",
+    "name": "Rue Bishop",
+    "lat": 45.4961,
+        "lng": -73.5751,
+    "zone": "B",
+    "price": 2.0
+  },
+  {
+    "id": "3",
+    "name": "Rue Mackay",
+    "lat": 45.497,
+    "lng": -73.576,
+    "zone": "C",
+    "price": 0
+  }
+]
