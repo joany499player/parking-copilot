@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="fr-ca" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="L’Agence de mobilité durable a pour mission de veiller à la gestion, à l’application de la réglementation et au développement du stationnement tarifé. ">
+	<meta name="generator" content="Joomla! - Open Source Content Management">
+	<title>Données ouvertes - Agence de mobilité durable de Montréal</title>
+	<link href="https://www.agencemobilitedurable.ca/fr/informations/donnees-ouvertes" rel="alternate" hreflang="fr-CA">
+	<link href="https://www.agencemobilitedurable.ca/en/information/open-data" rel="alternate" hreflang="en-CA">
+	<link href="https://www.agencemobilitedurable.ca/fr/recherche?format=opensearch" rel="search" title="OpenSearch Agence de mobilité durable de Montréal" type="application/opensearchdescription+xml">
+	<link href="/favicon.ico" rel="icon" type="image/vnd.microsoft.icon">
+
+	<meta property="og:image" content="https://www.agencemobilitedurable.ca/images/AMD_montreal_logo_sm.png" /><meta property="og:image:width" content="213" /><meta property="og:image:height" content="92" /><meta property="og:title" content="Données ouvertes - Agence de mobilité durable de Montréal" /><meta property="og:description" content="L’Agence de mobilité durable a pour mission de veiller à la gestion, à l’application de la réglementation et au développement du stationnement tarifé. " />
+	<link href="/media/system/css/joomla-fontawesome.min.css?5653cb143cd0fbe18d72708a1e39ed11" rel="lazy-stylesheet" /><noscript><link href="/media/system/css/joomla-fontawesome.min.css?5653cb143cd0fbe18d72708a1e39ed11" rel="stylesheet" /></noscript>
+	<link href="/templates/novisoft/css/colors_client.css?ver=11" rel="stylesheet" />
+	<link href="/media/templates/site/novisoft/css/template.min.css?5653cb143cd0fbe18d72708a1e39ed11" rel="stylesheet" />
+	<link href="/templates/novisoft/css/template.css?ver=212" rel="stylesheet" />
+	<link href="/media/mod_languages/css/template.min.css?5653cb143cd0fbe18d72708a1e39ed11" rel="stylesheet" />
+	<link href="/media/vendor/awesomplete/css/awesomplete.css?1.1.5" rel="stylesheet" />
+	<link href="/media/templates/site/novisoft/css/vendor/joomla-custom-elements/joomla-alert.min.css?0.2.0" rel="stylesheet" />
+	<link href="/media/com_jce/site/css/content.min.css?badb4208be409b1335b815dde676300e" rel="stylesheet" />
+	<link href="/plugins/system/jcemediabox/css/jcemediabox.min.css?5fd08c89b5f5fb4807fcec58ae247364" rel="stylesheet" />
+	<link href="/modules/mod_novisoft_menu/assets/ns.menu.responsive.min.css" rel="stylesheet" />
+	<style>:root {
+		--hue: 214;
+		--template-bg-light: #f0f4fb;
+		--template-text-dark: #495057;
+		--template-text-light: #ffffff;
+		--template-link-color: #2a69b8;
+		--template-special-color: #001B4C;
+		
+	}</style>
+
+	<script src="/media/vendor/jquery/js/jquery.min.js?3.7.1"></script>
+	<script src="/media/legacy/js/jquery-noconflict.min.js?04499b98c0305b16b373dff09fe79d1290976288"></script>
+	<script src="/media/templates/site/novisoft/js/jquery.ns.rwd.js?5653cb143cd0fbe18d72708a1e39ed11"></script>
+	<script src="/media/templates/site/novisoft/js/jquery.ns.rwdbanner.js?ver=5"></script>
+	<script src="/templates/novisoft/js/template.js?ver=16"></script>
+	<script src="/templates/novisoft/js/inputmask/inputmask.js?5653cb143cd0fbe18d72708a1e39ed11"></script>
+	<script src="/templates/novisoft/js/inputmask/jquery.inputmask.js?5653cb143cd0fbe18d72708a1e39ed11"></script>
+	<script src="/media/mod_menu/js/menu-es5.min.js?5653cb143cd0fbe18d72708a1e39ed11" nomodule defer></script>
+	<script type="application/json" class="joomla-script-options new">{"joomla.jtext":{"MOD_FINDER_SEARCH_VALUE":"Recherche &hellip;","JLIB_JS_AJAX_ERROR_OTHER":"Une erreur est survenue lors de la r\u00e9cup\u00e9ration des donn\u00e9es JSON : code de statut HTTP %s .","JLIB_JS_AJAX_ERROR_PARSE":"Une erreur d'analyse s'est produite lors du traitement des donn\u00e9es JSON suivantes : <br><code style=\"color:inherit;white-space:pre-wrap;padding:0;margin:0;border:0;background:inherit;\">%s<\/code>","ERROR":"Erreur","MESSAGE":"Message","NOTICE":"Annonce","WARNING":"Avertissement","JCLOSE":"Fermer","JOK":"OK","JOPEN":"Ouvrir"},"finder-search":{"url":"\/fr\/component\/finder\/?task=suggestions.suggest&format=json&tmpl=component&Itemid=102"},"system.paths":{"root":"","rootFull":"https:\/\/www.agencemobilitedurable.ca\/","base":"","baseFull":"https:\/\/www.agencemobilitedurable.ca\/"},"csrf.token":"5ce90db8984595696cac8fab4c849adb"}</script>
+	<script src="/media/system/js/core.min.js?9c761ae035a6bd778a710e6c0f5ff7de049b67a3"></script>
+	<script src="/media/vendor/webcomponentsjs/js/webcomponents-bundle.min.js?2.8.0" nomodule defer></script>
+	<script src="/media/templates/site/novisoft/js/template.min.js?5653cb143cd0fbe18d72708a1e39ed11" defer></script>
+	<script src="/media/com_finder/js/finder-es5.min.js?14e4c7fdce4ca11c6d12b74bad128529a294b183" nomodule defer></script>
+	<script src="/media/system/js/messages-es5.min.js?44e3f60beada646706be6569e75b36f7cf293bf9" nomodule defer></script>
+	<script src="/media/system/js/joomla-hidden-mail-es5.min.js?86544755a5c7287d31511970d36b3906e8e22dba" nomodule defer></script>
+	<script src="/media/system/js/joomla-hidden-mail.min.js?6829a5ca62409c5d92c27b7c42bad9e81b3a480a" type="module"></script>
+	<script src="/media/vendor/awesomplete/js/awesomplete.min.js?1.1.5" defer></script>
+	<script src="/media/com_finder/js/finder.min.js?c8b55661ed62db937b8d6856090adf9258c4a0fc" type="module"></script>
+	<script src="/media/system/js/messages.min.js?7425e8d1cb9e4f061d5e30271d6d99b085344117" type="module"></script>
+	<script src="/plugins/system/jcemediabox/js/jcemediabox.min.js?5fd08c89b5f5fb4807fcec58ae247364"></script>
+	<script src="/modules/mod_novisoft_menu/assets/jquery.ns.menu.js"></script>
+	<script>jQuery(document).ready(function(){WfMediabox.init({"base":"\/","theme":"standard","width":"","height":"","lightbox":0,"shadowbox":0,"icons":1,"overlay":1,"overlay_opacity":0,"overlay_color":"","transition_speed":300,"close":2,"scrolling":"0","labels":{"close":"Close","next":"Next","previous":"Previous","cancel":"Cancel","numbers":"{{numbers}}","numbers_count":"{{current}} of {{total}}","download":"Download"},"swipe":true});});</script>
+	<link href="https://www.agencemobilitedurable.ca/fr/informations/donnees-ouvertes" rel="alternate" hreflang="x-default">
+
+
+	<link rel="apple-touch-icon" sizes="120x120" href="/templates/novisoft/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/templates/novisoft/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/templates/novisoft/favicon-16x16.png">
+	<link rel="manifest" href="/templates/novisoft/site.webmanifest">
+	<link rel="mask-icon" href="/templates/novisoft/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WL72FM3');</script>
+<!-- End Google Tag Manager --><!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WL72FM3"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+	<link rel="stylesheet" href="https://use.typekit.net/iso5rvt.css">
+
+</head>
+
+<body class="site com_content wrapper-static view-article no-layout no-task itemid-174" data-rwd="767,991,1352">
+	<header class="header container-header">
+        <div class="container-menu-mobile"></div>
+
+		
+        <div class="before-fixed">
+                    <div class="container-topbar">
+	            <div class="left-section">
+</div>
+	            <div class="right-section"><ul class="mod-menu mod-list nav ">
+<li class="nav-item item-133"><a href="/fr/nous-joindre" class="contact-link">Nous joindre</a></li></ul>
+<div class= "mod-menu-account">
+    <div class="septop" >Mon compte</div>
+    <div class="submenu">
+        <a href="https://www.mobicite.ca/" target="_blank" rel="noopener">Mobicité</a>
+    </div>
+</div><div class="mod-languages">
+    <p class="visually-hidden" id="language_picker_des_110">Sélectionnez votre langue</p>
+
+
+    <ul aria-labelledby="language_picker_des_110" class="mod-languages__list lang-inline">
+
+                                                    <li>
+                <a  href="/en/information/open-data">
+                                            English                                    </a>
+            </li>
+                </ul>
+
+</div>
+
+<form class="mod-finder js-finder-searchform form-search" action="/fr/recherche?f=1" method="get" role="search">
+    <label for="mod-finder-searchword118" class="visually-hidden finder"></label><div class="mod-finder__search input-group"><input type="text" name="q" id="mod-finder-searchword118" class="js-finder-search-query form-control" value="" placeholder="Recherche &hellip;"><button class="btn btn-primary" type="submit"><span class="icon-search icon-white" aria-hidden="true"></span> </button></div>
+            <input type="hidden" name="f" value="1"></form>
+</div>
+            </div>
+                </div>
+
+
+
+
+        <div class="container-large">
+            <div class="grid-child logo-top-menu d-none d-lg-flex">
+                
+                        <div class="navbar-brand">
+                            <a class="brand-logo" href="/">
+                                <img src="/images/AMD_montreal_logo_sm.png#joomlaImage://local-images/AMD_montreal_logo_sm.png?width=213&amp;height=92" alt="Agence de mobilité durable de Montréal">                            </a>
+                            <span  data-rwdmove=".menu-header, .menu-header, .navbar-brand, .navbar-brand">
+                                
+                            </span>
+
+                        </div>
+
+                
+	                                <div class="container-nav container-menu-large  d-none d-lg-block">
+			                                        <div data-rwdmove=".container-menu-mobile, .container-menu-mobile, .container-menu-large, .container-menu-large">
+                                
+
+
+<script type = "text/javascript" >
+
+jQuery(document).ready(function() {
+	// Permet de fermer le menu si on click ailleur sur le site 
+	jQuery('#menu-catchall').on('click', function(evt){
+	    evt.preventDefault();
+	    closeMenu();
+	});
+
+
+});
+
+function openMenu(x) {
+    var y = document.getElementsByTagName("body")[0];
+    y.classList.toggle("menu-open");
+}
+
+function closeMenu() {
+    el = jQuery("body");
+    if ( el.length > 0)
+    	el.removeClass("menu-open");
+}
+
+function openSubMenu(x) {
+    x.parentNode.classList.toggle("submenu-open");
+}
+
+</script>
+
+
+<div class="ns_menu_responsive expand-over  main_menu "
+     data-rwdclass="view-compact, view-compact, view-large, view-large" >
+
+     <div class="mobile-bar" >
+         <a class="menu_btn" onclick="openMenu(this)" >
+            <span class="icon-bar bar-left"></span>
+            <span class="icon-bar bar-right"></span>
+          </a>
+
+          <div class="logo-mobile">
+              <a href="/">
+                <img src="/images/AMD_montreal_logo_sm.png#joomlaImage://local-images/AMD_montreal_logo_sm.png?width=213&amp;height=92" alt="">              </a>
+          </div>
+          <div class="action-mobile"></div>
+     </div>
+
+      <div id="menu-catchall" ></div>
+
+      <div class="menu-content">
+            <div class="menu-header">
+                            </div>
+
+            <div class="menu-content-items">
+                <ul class="ns_menu menu main_menu " >
+
+                    <li class="item-131 clearfix deeper parent"><span class="separator" onclick="openSubMenu(this)">Stationnement</span>
+<a class="btn-open-sub" onclick="openSubMenu(this)" >
+								  <span class="icon-bar bar-right"></span>
+    							<span class="icon-bar bar-left"></span>	
+								</a><ul class="submenu"><li class="item-263 clearfix"><a href="/fr/stationnement/carte-du-stationnement"   onclick="closeMenu()">Carte du stationnement</a></li><li class="item-132 clearfix"><a href="/fr/stationnement/stationnement-tarife-sur-rue"   onclick="closeMenu()">Stationnement tarifé sur rue</a></li><li class="item-134 clearfix deeper parent"><a href="/fr/stationnement/terrains-de-stationnement"   onclick="closeMenu()">Terrains de stationnement</a><a class="btn-open-sub" onclick="openSubMenu(this)" >
+								  <span class="icon-bar bar-right"></span>
+    							<span class="icon-bar bar-left"></span>	
+								</a><ul class="submenu"><li class="item-215 clearfix"><a href="/fr/stationnement/carte-du-stationnement"  onclick="closeMenu()">carte</a></li></ul></li><li class="item-152 clearfix"><a href="/fr/stationnement/stationnement-tarife-reserve-personnes-a-mobilite-reduite"   onclick="closeMenu()">Stationnement tarifé réservé aux personnes à mobilité réduite</a></li><li class="item-141 clearfix"><a href="/fr/stationnement/signaler-un-vehicule-en-infraction"   onclick="closeMenu()">Signaler un véhicule en infraction</a></li><li class="item-266 clearfix"><a href="/fr/stationnement/poles-de-mobilite"   onclick="closeMenu()">Pôles de mobilité</a></li></ul></li><li class="item-136 clearfix deeper parent"><span class="separator" onclick="openSubMenu(this)">Innovation</span>
+<a class="btn-open-sub" onclick="openSubMenu(this)" >
+								  <span class="icon-bar bar-right"></span>
+    							<span class="icon-bar bar-left"></span>	
+								</a><ul class="submenu"><li class="item-269 clearfix"><a href="/fr/innovation/projets-pilotes"   onclick="closeMenu()">Projets pilotes</a></li><li class="item-274 clearfix"><a href="/fr/innovation/lecture-automatisee-plaques-immatriculation"   onclick="closeMenu()">Lecture automatisée de plaques d’immatriculation</a></li><li class="item-277 clearfix"><a href="/fr/innovation/portail-donnees-mobilite"   onclick="closeMenu()">Portail de données en mobilité</a></li><li class="item-144 clearfix deeper parent"><a href="/fr/innovation/vitrine-innovation"   onclick="closeMenu()">Vitrine d'innovation</a><a class="btn-open-sub" onclick="openSubMenu(this)" >
+								  <span class="icon-bar bar-right"></span>
+    							<span class="icon-bar bar-left"></span>	
+								</a><ul class="submenu"><li class="item-145 clearfix"><a href="/fr/innovation/vitrine-innovation/projet-pilote-vehicule-a-basse-vitesse-electrique"   onclick="closeMenu()">Projet pilote | Véhicule à basse vitesse électrique</a></li><li class="item-146 clearfix"><a href="/fr/innovation/vitrine-innovation/capteurs"   onclick="closeMenu()">Capteurs pour établir l’occupation des places de stationnement</a></li></ul></li><li class="item-147 clearfix"><a href="/fr/innovation/inventaire-de-la-bordure-de-rue"   onclick="closeMenu()">Inventaire de la bordure de rue</a></li></ul></li><li class="item-137 clearfix deeper parent"><span class="separator" onclick="openSubMenu(this)">Infos</span>
+<a class="btn-open-sub" onclick="openSubMenu(this)" >
+								  <span class="icon-bar bar-right"></span>
+    							<span class="icon-bar bar-left"></span>	
+								</a><ul class="submenu"><li class="item-279 clearfix"><a href="/fr/infos-pratiques/mobicite"   onclick="closeMenu()"><span class="letter_M">M</span>obicité</a></li><li class="item-149 clearfix"><a href="/fr/infos-pratiques/bornes-de-paiement"   onclick="closeMenu()">Bornes de paiement</a></li><li class="item-151 clearfix"><a href="https://servicesenligne2.ville.montreal.qc.ca/sel/inforemorquage/index?lang=fr" target="_blank" >Info-remorquage</a></li><li class="item-153 clearfix"><a href="/fr/infos-pratiques/navette-747-stm"   onclick="closeMenu()">Navette 747 - ST<span class="letter_M">M</span></a></li><li class="item-154 clearfix"><a href="/fr/infos-pratiques/operation-chargement-neige"   onclick="closeMenu()">Opération chargement de neige</a></li><li class="item-155 clearfix"><a href="/fr/infos-pratiques/permis-journalier"   onclick="closeMenu()">Permis journalier</a></li><li class="item-271 clearfix"><a href="/fr/infos-pratiques/marque-bonjour"   onclick="closeMenu()"><span class="letter_M">M</span>arque Bonjour</a></li></ul></li><li class="item-138 clearfix deeper parent"><span class="separator" onclick="openSubMenu(this)">Actualités</span>
+<a class="btn-open-sub" onclick="openSubMenu(this)" >
+								  <span class="icon-bar bar-right"></span>
+    							<span class="icon-bar bar-left"></span>	
+								</a><ul class="submenu"><li class="item-156 clearfix deeper parent"><a href="/fr/actualites/nouvelles"   onclick="closeMenu()">Nouvelles</a><a class="btn-open-sub" onclick="openSubMenu(this)" >
+								  <span class="icon-bar bar-right"></span>
+    							<span class="icon-bar bar-left"></span>	
+								</a><ul class="submenu"><li class="item-182 clearfix"><a href="/fr/actualites/nouvelles/archives?catid[0]=8"   onclick="closeMenu()">Archives</a></li></ul></li><li class="item-157 clearfix"><a href="/fr/actualites/evenements"   onclick="closeMenu()">Événements</a></li></ul></li><li class="item-139 clearfix deeper parent"><span class="separator" onclick="openSubMenu(this)">À propos</span>
+<a class="btn-open-sub" onclick="openSubMenu(this)" >
+								  <span class="icon-bar bar-right"></span>
+    							<span class="icon-bar bar-left"></span>	
+								</a><ul class="submenu"><li class="item-158 clearfix"><a href="/fr/a-propos/agence-de-mobilite-durable"   onclick="closeMenu()">Agence de mobilité durable de <span class="letter_M">M</span>ontréal</a></li><li class="item-159 clearfix"><a href="/fr/a-propos/mission-vision-valeurs"   onclick="closeMenu()"><span class="letter_M">M</span>ission, vision, valeurs</a></li><li class="item-160 clearfix"><a href="/fr/a-propos/conseil-d-administration"   onclick="closeMenu()">Conseil d'administration</a></li><li class="item-161 clearfix"><a href="/fr/a-propos/cd"   onclick="closeMenu()">Comité de direction</a></li><li class="item-162 clearfix"><a href="/fr/a-propos/plan-strategique-organisationnel"   onclick="closeMenu()">Plan stratégique organisationnel</a></li><li class="item-163 clearfix deeper parent"><a href="/fr/a-propos/rapports-annuels"   onclick="closeMenu()">Rapports annuels</a><a class="btn-open-sub" onclick="openSubMenu(this)" >
+								  <span class="icon-bar bar-right"></span>
+    							<span class="icon-bar bar-left"></span>	
+								</a><ul class="submenu"><li class="item-181 clearfix"><a href="/fr/a-propos/rapports-annuels/rapport-annuel-scsm"   onclick="closeMenu()">Rapport annuel - SCS<span class="letter_M">M</span></a></li></ul></li></ul></li><li class="item-140 clearfix"><a href="/fr/ressources/carrieres"  onclick="closeMenu()">Carrières</a></li></ul>
+            </div>
+
+            <div class="menu-footer">
+                            </div>
+      </div>
+</div>
+
+<script type = "text/javascript">
+  jQuery(document).ready(function() {
+
+      jQuery('.ns_menu > li a, .ns_menu > li span').hover(
+
+          function () {
+              // jQuery(this).addClass("showOverflow")
+              // jQuery(this).prev().addClass("showOverflow");
+              jQuery(this).parents("ul.ns_menu").addClass("openSubMenu");
+          },
+
+          function () {
+              // jQuery(this).removeClass("showOverflow");
+              // jQuery(this).prev().removeClass("showOverflow");
+              //jQuery(this).parents("ul" ).removeClass("openSubMenu");
+          }
+      );
+
+      jQuery('.ns_menu li a').click(
+
+          function () {
+              // jQuery(this).removeClass("showOverflow");
+              // jQuery(this).prev().removeClass("showOverflow");
+              jQuery(this).parents("ul.ns_menu" ).removeClass("openSubMenu");
+          }
+      );
+
+	     
+  });
+
+</script>
+
+                            </div>
+			                                </div>
+	                        </div>
+
+
+        </div>
+
+
+	</header>
+
+
+	<div class="site-grid">
+					<div id="banner-intern" class="container-banner full-width"> 				
+				
+			</div>
+		
+		
+		
+		
+		<div class="grid-child container-component "> 			
+			
+			<div id="system-message-container" aria-live="polite"></div>
+
+			<main>
+			<div class="grid-child">
+<div class="com-content-article item-page default-page" itemscope itemtype="https://schema.org/Article">
+	<meta itemprop="inLanguage" content="fr-FR">
+	
+	
+    
+		
+		
+	
+		
+								<div itemprop="articleBody" class="com-content-article__body">
+          <h1>Données ouvertes</h1>
+<p>Bienvenue dans la section Données ouvertes. L’Agence de mobilité durable de Montréal souhaite relayer aux développeurs et développeuses les données concernant la localisation du mobilier urbain (bornes de paiement et panonceaux), la réglementation, la tarification et les périodes horaires des places de stationnement tarifées sur rue et hors rue à Montréal.</p>
+<p><img src="/images/contenu/Logo_Ville_MTL1.jpg" alt="Logo Ville MTL1" width="400" height="109" style="margin-left: 20px; margin-bottom: 20px; float: right;" /></p>
+<h4>Ville de <span class="letter_M">M</span>ontréal</h4>
+<p>Afin de faciliter le partage des données, l’Agence de mobilité durable de Montréal s’allie au Bureau de la ville intelligente et numérique de la Ville de Montréal pour ouvrir ses données. En plus d’être disponibles sur notre site Web, les données sont accessibles sur le portail des données ouvertes de la Ville de Montréal.</p>
+<ul>
+<li><a href="/fr/informations/donnees-ouvertes/description-des-donnees-disponibles">Description des données disponibles</a></li>
+<li><a href="https://www.donneesquebec.ca/lignes-directrices-sur-la-diffusion-de-donnees-ouvertes/" target="_blank" rel="noopener" class="external_link">Plus d’informations sur les données CSV</a></li>
+<li><a href="/fr/informations/donnees-ouvertes/soumettre-une-application">Soumission d’une application</a></li>
+<li><a href="/fr/informations/donnees-ouvertes/liste-des-applications">Liste des applications</a></li>
+<li>Pour vos questions et vos commentaires, écrivez-nous à <joomla-hidden-mail  is-link="1" is-email="1" first="ZG9ubmVlc291dmVydGVz" last="YWdlbmNlbW9iaWxpdGVkdXJhYmxlLmNh" text="ZG9ubmVlc291dmVydGVzQGFnZW5jZW1vYmlsaXRlZHVyYWJsZS5jYQ==" base="" >Cette adresse e-mail est protégée contre les robots spammeurs. Vous devez activer le JavaScript pour la visualiser.</joomla-hidden-mail></li>
+</ul>	</div>
+
+	
+							</div>
+</div>
+
+			</main>
+			
+		</div>
+
+		
+		
+			</div>
+
+	
+	<footer class="container-footer footer full-width">
+		<div class="grid-child footer-grid">
+			<div class="footer-logo">
+<div id="mod-custom218" class="mod-custom custom ">
+	<p><a href="/fr/"><img src="/images/AMD_montreal_logo_w_sm.png" alt="Agence de mobilité durable de Montréal" width="162" height="70" /></a></p></div>
+</div>
+			<div class="footer-social">
+<div id="mod-custom217" class="mod-custom custom module_social_network">
+	<div><a href="https://www.facebook.com/agencemobilitedurabledemontreal" target="_blank" rel="noopener" class="external_link"><img src="/images/Facebook1.png" alt="Facebook1" width="15" height="28" /></a><a href="https://twitter.com/agencemobi_mtl" target="_blank" rel="noopener" class="external_link"><img src="/images/x.png" alt="X logo" width="25" height="23" /></a><a href="https://www.instagram.com/agencemobilitedurable" target="_blank" rel="noopener" class="external_link"><img src="/images/instagram1.png" alt="Instagram" width="26" height="25" /></a><a href="https://www.linkedin.com/company/agence-de-mobilite-durable/" target="_blank" rel="noopener" class="external_link"><img src="/images/linkedin1.png" alt="Linkedin" width="23" height="23" /></a></div></div>
+</div>
+			<div class="footer-copyright">&copy; 2026 Agence de mobilité durable de Montréal. Tous droits réservés.</div>
+			<div class="footer-col1">
+<div class="mod-menu mod-menu-simplemenu simplemenu " >
+    <h3>Agence de mobilité durable de Montréal</h3><ul class="mod-list" >
+<li class="simplemenu-item item-165 level-1"><a href="/fr/nous-joindre" >Nous joindre</a></li><li class="simplemenu-item item-166 level-1"><a href="/fr/agence/politique-de-vie-privee" >Politique de vie privée</a></li><li class="simplemenu-item item-167 level-1"><a href="/fr/agence/conditions-d-utilisation" >Conditions d'utilisation</a></li><li class="simplemenu-item item-168 level-1"><a href="/fr/agence/netiquette" >Nétiquette</a></li></ul>
+</div>
+</div>
+			<div class="footer-col2">
+<div class="mod-menu mod-menu-simplemenu simplemenu " >
+    <h3>Ressources</h3><ul class="mod-list" >
+<li class="simplemenu-item item-170 level-1 parent"><a href="/fr/ressources/medias/contact" >Médias</a></li><li class="simplemenu-item item-180 level-1 parent"><a href="/fr/ressources/carrieres" >Carrières</a></li><li class="simplemenu-item item-282 level-1"><a href="/fr/infos-pratiques/mobicite#faq" >FAQ</a></li></ul>
+</div>
+</div>
+			<div class="footer-col3">
+<div class="mod-menu mod-menu-simplemenu simplemenu " >
+    <h3>Informations</h3><ul class="mod-list" >
+<li class="simplemenu-item item-174 level-1 current parent"><a href="/fr/informations/donnees-ouvertes" aria-current="page">Données ouvertes</a></li><li class="simplemenu-item item-178 level-1"><a href="/fr/informations/fournisseurs" >Approvisionnement et appel d’offres</a></li><li class="simplemenu-item item-179 level-1"><a href="/fr/informations/acces-a-l-information" >Accès à l'information</a></li></ul>
+</div>
+
+<div id="mod-custom240" class="mod-custom custom ">
+	<p><a href="/images/contenu/Directive_linguistique___Agence_de_mobilit%C3%A9_durable_de_Montr%C3%A9al.pdf" target="_blank" class="wf_file">Directive linguistique</a></p></div>
+</div>
+			<div class="footer-novisoft"><a target="_blank" href="http://www.novisoft.com"><img src="/modules/mod_novisoft_logo/images/novisoft-footer-icon-bw-light.png" alt="Site Web programmé et réalisé par Novisoft" style="border:0;"/></a>
+</div>
+		</div>
+	</footer>
+
+    
+			<a href="#top" id="back-top" class="back-to-top-link" aria-label="TPL_CASSIOPEIA_BACKTOTOP">
+			<span class="icon-arrow-up icon-fw" aria-hidden="true"></span>
+		</a>
+	
+	
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"01afb0e3375e42d0b579e1b66cbaba78","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9f11937feb63b0a3',t:'MTc3Njk5NjY3NA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
