@@ -36,12 +36,16 @@ export function resolveSpot(spotId: string) {
   const periods = periodes.filter((item: any) => periodIds.includes(String(item.nID)));
   const evaluation = evaluateRules(rules, rulePeriods, periods, new Date());
 
+  const hasActiveRule = evaluation.activeRules.length > 0;
+
   return {
     id: place.sNoPlace,
     name: place.sNomRue,
-    lat: Number(place.nLatitude),
+        lat: Number(place.nLatitude),
     lng: Number(place.nLongitude),
-        price: place.nTarifHoraire,
+    price: place.nTarifHoraire,
+    status: hasActiveRule ? 'Check Rules' : 'Allowed',
+    until: hasActiveRule ? 'Active now' : 'No active restriction now',
     activeRuleCodes: evaluation.activeRules.map((rule: any) => rule.Name),
     activeRules: evaluation.activeRules,
     activeRulePeriods: evaluation.activeRulePeriods,

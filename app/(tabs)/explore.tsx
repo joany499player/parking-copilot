@@ -39,13 +39,13 @@ export default function MapScreen() {
 
           <Text
             style={{
-                            color: spot.status === 'Warning' ? 'orange' : 'lightgreen',
+                            color: spot.status === 'Check Rules' ? 'orange' : 'lightgreen',
               fontSize: 16,
               fontWeight: '600',
               marginBottom: 12,
             }}
           >
-            {spot.status} until {spot.until}
+            {spot.status} - {spot.until}
           </Text>
 
           <Link href="/modal" asChild>
