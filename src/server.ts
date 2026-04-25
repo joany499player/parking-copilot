@@ -1,38 +1,18 @@
 import cors from 'cors';
 import express from 'express';
+import { resolveSpot } from './montrealResolver';
 
 const app = express();
 const PORT = 3001;
+
 app.use(cors());
 app.use(express.json());
-
-const spots = [
-  {
-    id: '1',
-    name: 'Rue Peel',
-    status: 'Allowed',
-    until: '5:30 PM',
-    price: '$1.50 / hour',
-  },
-  {
-    id: '2',
-    name: 'Rue Bishop',
-        status: 'Warning',
-    until: '6:00 PM',
-    price: '$2.00 / hour',
-  },
-];
 
 app.get('/', (_req, res) => {
   res.json({ message: 'Parko backend is running' });
 });
-
-app.get('/spots', (_req, res) => {
-  res.json(spots);
-});
-
 app.get('/spots/:id', (req, res) => {
-      const spot = spots.find((item) => item.id === req.params.id);
+  const spot = resolveSpot(req.params.id);
 
   if (!spot) {
     return res.status(404).json({ message: 'Spot not found' });
@@ -41,6 +21,19 @@ app.get('/spots/:id', (req, res) => {
   res.json(spot);
 });
 
-app.listen(PORT, () => {
+app.get('/spots', (_req, res) => {
+  const ids = ['A024', 'A025', 'A026'];
+  const spots = ids
+    .map((id) => resolveSpot(id))
+        .filter(Boolean);
+
+  res.json(spots);
+});
+
+const server = app.listen(PORT, '0.0.0.0', () => {
   console.log(`Server running on http://localhost:${PORT}`);
+});
+
+server.on('error', (error) => {
+      console.error(error);
 });
