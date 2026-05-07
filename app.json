@@ -40,6 +40,9 @@
         }
       ]
     ],
+    "extra": {
+  "googleMapsApiKey": "AIzaSyCc5ZkfKrO60iAPD2DvZDtwu6ts7CGuSD4"
+},
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
